@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Insharah AI Power Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h1>Insharah AI Power Bot</h1>
+    <input type="password" id="passcode" placeholder="Enter Passcode" />
+    <button onclick="unlock()">Unlock Signals</button>
+  </div>
+
+  <div id="main-dashboard" style="display:none;">
+    <h2>Signal Dashboard</h2>
+    <select id="currency">
+      <option>EUR/USD</option>
+      <option>BTC/USD</option>
+      <option>OTC/USDT</option>
+    </select>
+    <select id="timeframe">
+      <option>5 sec</option>
+      <option>15 sec</option>
+      <option>20 sec</option>
+      <option>30 sec</option>
+    </select>
+    <button onclick="generateSignal()">Generate Signal</button>
+    <div id="signal-result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
